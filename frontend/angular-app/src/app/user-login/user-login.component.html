@@ -1,0 +1,11 @@
+<form>
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    <button type="submit" (click)="onSubmit($event)">Save</button><br/><br/>
+    <button type="button" (click)="navigateToUserList()">Open User List</button>
+    <div *ngIf="showWarning" style="color: red; margin-top: 10px;">Please fill in all required fields.</div>
+</form>
